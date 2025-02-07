@@ -1,0 +1,16 @@
+image: gitpod/workspace-full
+
+tasks:
+  - init: |
+      # Install Go (for Cosmos SDK)
+      sudo apt-get update
+      sudo apt-get install -y golang
+
+      # Install Rust (for Substrate)
+      curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+      source $HOME/.cargo/env
+
+      # Install VS Code extensions (optional)
+      code --install-extension ms-vscode.go
+      code --install-extension rust-lang.rust
+    command: echo "Development environment ready!"
