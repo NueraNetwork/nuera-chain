@@ -3,7 +3,7 @@ workspace:
   resources:
     requests:
       cpu: "4"
-      memory: "8Gi"
+      memory: "16Gi"
 
 # Base image for the workspace
 image: gitpod/workspace-full
