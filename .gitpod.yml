@@ -14,3 +14,12 @@ tasks:
       code --install-extension ms-vscode.go
       code --install-extension rust-lang.rust
     command: echo "Development environment ready!"
+    
+image: gitpod/workspace-full
+
+# Use a smaller instance type
+workspace:
+  resources:
+    requests:
+      cpu: "4"
+      memory: "8Gi"
