@@ -2,7 +2,7 @@
 workspace:
   resources:
     requests:
-      cpu: "4"
+      cpu: "2"
       memory: "8Gi"
 
 # Base image for the workspace
